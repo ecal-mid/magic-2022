@@ -196,7 +196,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &299274782
 Transform:
   m_ObjectHideFlags: 0
@@ -223,9 +223,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdad6bf6ff9605d4387f5dddbb5f2da0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clientAddress: 172.20.10.7
+  clientAddress: 172.20.10.12
   clientPort: 9999
-  serverMinPort: 8880
+  serverMinPort: 8002
   serverMaxPort: 8899
 --- !u!1 &385129174
 GameObject:
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clientAddress: 172.20.10.10
   clientPort: 9999
-  serverMinPort: 8880
+  serverMinPort: 8000
   serverMaxPort: 8899
 --- !u!4 &385129176
 Transform:
@@ -660,7 +660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clientAddress: 172.20.10.11
   clientPort: 9999
-  serverMinPort: 8880
+  serverMinPort: 8001
   serverMaxPort: 8899
 --- !u!4 &1557112039
 Transform:
@@ -741,11 +741,11 @@ PrefabInstance:
       objectReference: {fileID: 1302780539}
     - target: {fileID: 6999947566618922963, guid: a3f88b64a3e5041448ea2d7bba915322, type: 3}
       propertyPath: button.m_SingletonActionBindings.Array.data[0].m_Path
-      value: Esp32Device1/button
+      value: Esp32Device2/button
       objectReference: {fileID: 0}
     - target: {fileID: 6999947566618922963, guid: a3f88b64a3e5041448ea2d7bba915322, type: 3}
       propertyPath: encoder.m_SingletonActionBindings.Array.data[0].m_Path
-      value: Esp32Device1/encoder
+      value: Esp32Device2/encoder
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3f88b64a3e5041448ea2d7bba915322, type: 3}
