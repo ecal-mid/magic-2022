@@ -681,7 +681,7 @@ PlayerSettings:
     m_ModelFolderPath: 
     m_PortalFolderPath: 
   luminCert:
-    m_CertPath: C:/Users/mario/.magicleap-cert/testing2.cert
+    m_CertPath: ./Certificates/dev.cert
     m_SignPackage: 1
   luminIsChannelApp: 0
   luminVersion:

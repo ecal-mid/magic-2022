@@ -65,3 +65,6 @@ crashlytics-build.properties
 *.package
 *.mpk
 .out/
+
+/Certificates/dev.cert
+/Certificates/dev.privkey
