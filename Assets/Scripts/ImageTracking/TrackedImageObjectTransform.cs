@@ -15,7 +15,7 @@ public class TrackedImageObjectTransform : MonoBehaviour
         {
             case MLImageTracker.Target.TrackingStatus.Tracked:
 
-                var lerp = wasInitialized ? Time.deltaTime * 1f : 1;
+                var lerp = wasInitialized ? Time.deltaTime * 4f : 1;
                 transform.position = Vector3.Lerp(transform.position, trackingState.Position, lerp);
                 transform.rotation = Quaternion.Slerp(transform.rotation, trackingState.Rotation, lerp);
 
