@@ -226,7 +226,7 @@ MonoBehaviour:
   clientAddress: 172.20.10.12
   clientPort: 9999
   serverMinPort: 8002
-  serverMaxPort: 8899
+  serverMaxPort: 8002
 --- !u!1 &385129174
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,8 +258,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clientAddress: 172.20.10.10
   clientPort: 9999
-  serverMinPort: 8000
-  serverMaxPort: 8899
+  serverMinPort: 8003
+  serverMaxPort: 8003
 --- !u!4 &385129176
 Transform:
   m_ObjectHideFlags: 0
@@ -724,7 +724,7 @@ MonoBehaviour:
   clientAddress: 172.20.10.11
   clientPort: 9999
   serverMinPort: 8001
-  serverMaxPort: 8899
+  serverMaxPort: 8001
 --- !u!4 &1557112039
 Transform:
   m_ObjectHideFlags: 0
