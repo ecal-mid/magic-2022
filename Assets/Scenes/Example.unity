@@ -663,11 +663,11 @@ PrefabInstance:
       objectReference: {fileID: 1302780539}
     - target: {fileID: 6999947566618922963, guid: a3f88b64a3e5041448ea2d7bba915322, type: 3}
       propertyPath: button.m_SingletonActionBindings.Array.data[0].m_Path
-      value: Esp32InputDevice2/button
+      value: Esp32InputDevice/button
       objectReference: {fileID: 0}
     - target: {fileID: 6999947566618922963, guid: a3f88b64a3e5041448ea2d7bba915322, type: 3}
       propertyPath: encoder.m_SingletonActionBindings.Array.data[0].m_Path
-      value: Esp32InputDevice2/encoder
+      value: Esp32InputDevice/encoder
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3f88b64a3e5041448ea2d7bba915322, type: 3}
@@ -843,11 +843,11 @@ PrefabInstance:
       objectReference: {fileID: 1302780539}
     - target: {fileID: 6999947566618922963, guid: a3f88b64a3e5041448ea2d7bba915322, type: 3}
       propertyPath: button.m_SingletonActionBindings.Array.data[0].m_Path
-      value: Esp32InputDevice/button
+      value: Esp32InputDevice2/button
       objectReference: {fileID: 0}
     - target: {fileID: 6999947566618922963, guid: a3f88b64a3e5041448ea2d7bba915322, type: 3}
       propertyPath: encoder.m_SingletonActionBindings.Array.data[0].m_Path
-      value: Esp32InputDevice/encoder
+      value: Esp32InputDevice2/encoder
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3f88b64a3e5041448ea2d7bba915322, type: 3}
