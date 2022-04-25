@@ -7,7 +7,7 @@
       "dependencies": {
         "jp.keijiro.osc-jack": "1.0.3"
       },
-      "hash": "1070d6ff89519884a96ecc7a44c4ed52210eede9"
+      "hash": "bccb4b741a1bbeec674bc80a2eb8bb2278b13ff6"
     },
     "com.magicleap.unitysdk": {
       "version": "https://github.com/magicleap/MagicLeapUnitySDK.git",
