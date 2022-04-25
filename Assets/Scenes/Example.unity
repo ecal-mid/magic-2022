@@ -180,100 +180,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24158fb1437dc8e418d893939758764d, type: 3}
---- !u!1 &299274781
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 299274782}
-  - component: {fileID: 299274783}
-  m_Layer: 0
-  m_Name: Controller 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &299274782
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299274781}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -39.44543, y: -21.314747, z: 5.6440043}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1195512322}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &299274783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299274781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdad6bf6ff9605d4387f5dddbb5f2da0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clientAddress: 10.189.8.64
-  clientPort: 9999
-  serverMinPort: 8002
-  serverMaxPort: 8002
---- !u!1 &385129174
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 385129176}
-  - component: {fileID: 385129175}
-  m_Layer: 0
-  m_Name: Controller 3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &385129175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 385129174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdad6bf6ff9605d4387f5dddbb5f2da0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clientAddress: 10.189.8.128
-  clientPort: 9999
-  serverMinPort: 8003
-  serverMaxPort: 8003
---- !u!4 &385129176
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 385129174}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -39.44543, y: -21.314747, z: 5.6440043}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1195512322}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,9 +282,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1195512322}
+  - component: {fileID: 895298909489034624}
+  - component: {fileID: 33242744468787272}
   - component: {fileID: 1195512323}
   m_Layer: 0
-  m_Name: Input_ESP32
+  m_Name: ESP32 Input
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -394,10 +302,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1557112039}
-  - {fileID: 299274782}
-  - {fileID: 385129176}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -410,9 +315,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1195512321}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fb07029dd5847f4bb81d92950f980a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 108b09b7c6151445cb27f352b912836a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  url: https://ecal-mid.ch/magicleap/devices.json
 --- !u!1001 &1284151773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -478,11 +384,11 @@ PrefabInstance:
       objectReference: {fileID: 1302780539}
     - target: {fileID: 6999947566618922963, guid: a3f88b64a3e5041448ea2d7bba915322, type: 3}
       propertyPath: button.m_SingletonActionBindings.Array.data[0].m_Path
-      value: Esp32Device1/button
+      value: Esp32InputDevice1/button
       objectReference: {fileID: 0}
     - target: {fileID: 6999947566618922963, guid: a3f88b64a3e5041448ea2d7bba915322, type: 3}
       propertyPath: encoder.m_SingletonActionBindings.Array.data[0].m_Path
-      value: Esp32Device1/encoder
+      value: Esp32InputDevice1/encoder
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3f88b64a3e5041448ea2d7bba915322, type: 3}
@@ -519,20 +425,20 @@ MonoBehaviour:
   imageTargetInfos:
   - Name: tracking0
     Image: {fileID: 2800000, guid: 1f945b5710367014fb9f335dd679ff57, type: 3}
-    isStationary: 1
-    LongerDimension: 0.2
+    isStationary: 0
+    LongerDimension: 0.21
   - Name: tracking1
     Image: {fileID: 2800000, guid: 2dff886ee36b54298965404a4ceb4fce, type: 3}
-    isStationary: 1
-    LongerDimension: 0.2
+    isStationary: 0
+    LongerDimension: 0.28
   - Name: tracking2
     Image: {fileID: 2800000, guid: 04e88e825b3854fc3862d002c614474c, type: 3}
-    isStationary: 1
-    LongerDimension: 0.2
+    isStationary: 0
+    LongerDimension: 0.28
   - Name: tracking3
     Image: {fileID: 2800000, guid: 373ee61b1fcd3433f94443dbfa979f4b, type: 3}
-    isStationary: 1
-    LongerDimension: 0.2
+    isStationary: 0
+    LongerDimension: 0.28
 --- !u!4 &1302780540
 Transform:
   m_ObjectHideFlags: 0
@@ -602,7 +508,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: c5e36f24-7581-4daa-9124-10d276ee26d4
-      m_Path: Esp32Device/encoder
+      m_Path: Esp32InputDevice/encoder
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -619,7 +525,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 8ac0c377-4ada-4d50-922d-c954801ce921
-      m_Path: Esp32Device1/encoder
+      m_Path: Esp32InputDevice1/encoder
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -636,7 +542,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 9454422c-595d-48b6-8a58-7d3f9c68b842
-      m_Path: Esp32Device2/button
+      m_Path: Esp32InputDevice2/button
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -692,53 +598,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1337265056}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1557112037
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1557112039}
-  - component: {fileID: 1557112038}
-  m_Layer: 0
-  m_Name: Controller 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1557112038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557112037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdad6bf6ff9605d4387f5dddbb5f2da0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clientAddress: 10.189.8.99
-  clientPort: 9999
-  serverMinPort: 8001
-  serverMaxPort: 8001
---- !u!4 &1557112039
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557112037}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -39.44543, y: -21.314747, z: 5.6440043}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1195512322}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2073034695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -804,11 +663,11 @@ PrefabInstance:
       objectReference: {fileID: 1302780539}
     - target: {fileID: 6999947566618922963, guid: a3f88b64a3e5041448ea2d7bba915322, type: 3}
       propertyPath: button.m_SingletonActionBindings.Array.data[0].m_Path
-      value: Esp32Device2/button
+      value: Esp32InputDevice2/button
       objectReference: {fileID: 0}
     - target: {fileID: 6999947566618922963, guid: a3f88b64a3e5041448ea2d7bba915322, type: 3}
       propertyPath: encoder.m_SingletonActionBindings.Array.data[0].m_Path
-      value: Esp32Device2/encoder
+      value: Esp32InputDevice2/encoder
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3f88b64a3e5041448ea2d7bba915322, type: 3}
@@ -907,6 +766,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &33242744468787272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195512321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb07029dd5847f4bb81d92950f980a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &566807649271228862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -970,8 +841,29 @@ PrefabInstance:
       propertyPath: imageTrackingSystem
       value: 
       objectReference: {fileID: 1302780539}
+    - target: {fileID: 6999947566618922963, guid: a3f88b64a3e5041448ea2d7bba915322, type: 3}
+      propertyPath: button.m_SingletonActionBindings.Array.data[0].m_Path
+      value: Esp32InputDevice/button
+      objectReference: {fileID: 0}
+    - target: {fileID: 6999947566618922963, guid: a3f88b64a3e5041448ea2d7bba915322, type: 3}
+      propertyPath: encoder.m_SingletonActionBindings.Array.data[0].m_Path
+      value: Esp32InputDevice/encoder
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3f88b64a3e5041448ea2d7bba915322, type: 3}
+--- !u!114 &895298909489034624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195512321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269a7419b47a47f0bff769a8ade8cfe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings: {fileID: 11400000, guid: 16e02b0d916ff480493d041f0d86bbaa, type: 2}
 --- !u!1 &8112845305198789025
 GameObject:
   m_ObjectHideFlags: 0
