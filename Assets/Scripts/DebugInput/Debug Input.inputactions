@@ -1,0 +1,94 @@
+{
+    "name": "Debug Input",
+    "maps": [
+        {
+            "name": "debug",
+            "id": "1a6c6d85-ffad-4323-b057-4e4a1b15b3a9",
+            "actions": [
+                {
+                    "name": "position",
+                    "type": "Value",
+                    "id": "8d3abcd6-71ba-4ee4-b779-cfd2cb1b60ee",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "rotation",
+                    "type": "Value",
+                    "id": "5ccb96eb-a6ce-45c9-99b0-c8c6420b353e",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "drag",
+                    "type": "Button",
+                    "id": "70807c9a-728d-4495-993e-db022fe12dd0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "raycastAction",
+                    "type": "Button",
+                    "id": "4d0a1593-ba29-45dc-adff-aa81531fffb0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "20a1de47-b5b3-4ac5-8d10-4fcfa78d38fd",
+                    "path": "<XRController>/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aa4a3792-aa78-4a51-9d2b-3c1c5c0bf84c",
+                    "path": "<XRController>/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bdaf7c84-aeb1-4bea-ace2-3ab2edbdd3ae",
+                    "path": "<MagicLeapController>/triggerButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "drag",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4f936c32-8a76-4010-80f8-90886d6f439d",
+                    "path": "<XRInputV1::MagicLeap::MagicLeapController>/bumperbutton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "raycastAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
