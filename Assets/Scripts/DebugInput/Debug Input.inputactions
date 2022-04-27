@@ -40,6 +40,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "toggleDebug",
+                    "type": "Button",
+                    "id": "8a7e9a4c-1ea6-4cb5-8b69-e0ccc69524be",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -84,6 +93,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "raycastAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "73ae60cc-aa09-44f3-b3a9-8cc1a67036cf",
+                    "path": "<MagicLeapController>/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "toggleDebug",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

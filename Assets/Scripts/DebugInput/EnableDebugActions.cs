@@ -10,9 +10,4 @@ public class EnableDebugActions : MonoBehaviour
     {
         actionAsset.Enable();
     }
-
-    void OnDisable()
-    {
-        actionAsset.Disable();
-    }
 }

@@ -16,16 +16,6 @@ public class DragAndDrop : MonoBehaviour
 
 	List<Collider> triggerObjects = new List<Collider>();
 
-	void OnEnable()
-	{
-		dragAction.action.Enable();
-	}
-
-	void OnDisable()
-	{
-		dragAction.action.Disable();
-	}
-
 	void OnTriggerEnter(Collider other)
 	{
 		triggerObjects.Add(other);
