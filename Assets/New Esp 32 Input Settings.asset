@@ -14,5 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serverPort: 8888
   clients:
-  - address: 10.189.8.99
+  - name: controller1
+    address: 10.189.8.57
     port: 9999
+    autoConnectInBuild: 0
+  - name: controller2
+    address: 10.189.8.136
+    port: 9999
+    autoConnectInBuild: 0
+  - name: controller3
+    address: 10.189.8.128
+    port: 9999
+    autoConnectInBuild: 0
+  - name: controller4
+    address: 10.189.8.32
+    port: 9999
+    autoConnectInBuild: 0
+  - name: controller5
+    address: 10.189.8.119
+    port: 9999
+    autoConnectInBuild: 1
+  - name: controller6
+    address: 10.189.8.15
+    port: 9999
+    autoConnectInBuild: 0
