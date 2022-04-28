@@ -602,7 +602,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    28: UNITY_INPUT_SYSTEM
+    28: 
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
