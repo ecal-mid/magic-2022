@@ -34,6 +34,8 @@ public class ObjectWithTransformBinding : MonoBehaviour
 
 	void Update()
 	{
+		if(transformBinding == null)
+			return;
 		var newIsDragging = GetComponent<Draggable>().draggingHandle != null;
 		if (isDragging && !newIsDragging)
 		{
